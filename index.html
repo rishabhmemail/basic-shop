@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>E-Commerce UI (Basic)</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border-radius: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #f5f5f5;
+      }
+
+      /* ===== NAVBAR ===== */
+      .navbar {
+        background: #111;
+        color: white;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .navbar h2 {
+        font-size: 22px;
+      }
+
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      /* ===== PRODUCT SECTION ===== */
+      .container {
+        padding: 30px;
+      }
+
+      .products {
+        display: flex;
+        gap: 20px;
+      }
+
+      .card {
+        background: white;
+        width: 250px;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      img {
+        width: 100%;
+        border-radius: 6px;
+      }
+
+      .card h3 {
+        margin: 10px 0 5px;
+      }
+
+      .card p {
+        font-size: 14px;
+        color: #555;
+      }
+
+      .price {
+        margin: 8px 0;
+        font-weight: bold;
+      }
+
+      .card button {
+        width: 100%;
+        padding: 8px;
+        border: none;
+        background: #111;
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      /* ===== FOOTER ===== */
+      .footer {
+        background: #111;
+        color: white;
+        padding: 20px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .footer p {
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+
+    <div class="navbar">
+      <h2>MyShop</h2>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Cart</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- PRODUCTS -->
+    <div class="container">
+      <h2 style="margin-bottom: 10px">Featured Products</h2>
+
+      <div class="products">
+        <div class="card">
+          <img
+            src="https://images.pexels.com/photos/35901130/pexels-photo-35901130.jpeg?_gl=1*1xrs0c2*_ga*MTA5MjI0MTcwLjE3NjIxODE1Mjk.*_ga_8JE65Q40S6*czE3NzAzNDQxOTEkbzQ3JGcxJHQxNzcwMzQ0MjI4JGoyMyRsMCRoMA.."
+            alt="img"
+          />
+          <h2>Product 1</h2>
+          <p>Simple product description.</p>
+          <div class="price">₹499</div>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.pexels.com/photos/35901130/pexels-photo-35901130.jpeg?_gl=1*1xrs0c2*_ga*MTA5MjI0MTcwLjE3NjIxODE1Mjk.*_ga_8JE65Q40S6*czE3NzAzNDQxOTEkbzQ3JGcxJHQxNzcwMzQ0MjI4JGoyMyRsMCRoMA.."
+            alt="img"
+          />
+          <h2>Product 2</h2>
+          <p>Simple product description.</p>
+          <div class="price">₹699</div>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.pexels.com/photos/35901130/pexels-photo-35901130.jpeg?_gl=1*1xrs0c2*_ga*MTA5MjI0MTcwLjE3NjIxODE1Mjk.*_ga_8JE65Q40S6*czE3NzAzNDQxOTEkbzQ3JGcxJHQxNzcwMzQ0MjI4JGoyMyRsMCRoMA.."
+            alt="img"
+          />
+          <h2>Product 3</h2>
+          <p>Simple product description.</p>
+          <div class="price">₹999</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <p>© 2026 MyShop</p>
+      <p>Privacy Policy | Terms</p>
+    </div>
+  </body>
+</html>
